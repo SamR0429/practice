@@ -62,7 +62,7 @@ console.log(sayHello(myName));
  * number)
  */
 
-function isTwo(number){
+function isTwo(number) {
     return number === 2;
 }
 
@@ -80,8 +80,8 @@ console.log(isTwo(random));
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
 
-function calculateTip(amount, tip){
-     let tipAmount = amount * tip;
+function calculateTip(amount, tip) {
+    let tipAmount = amount * tip;
     return tipAmount;
 }
 
@@ -125,4 +125,29 @@ console.log(calculateTip(0.15, 33.42)) // returns 5.013
 //
 // }
 
+
+function increment(x) {
+    return x + 1;
+}
+
+let four = increment(5);
+let six = increment(increment(increment(5)));
+
+console.log(four);
+console.log(six);
+
+
+function createPerson(firstName, lastName) {
+    return {
+        firstName: firstName,
+        lastName: lastName,
+        getFullName() {
+            return firstName + ' ' + lastName;
+        }
+    }
+}
+
+let name = createPerson('This is a', 'named function!');
+
+console.log(name.getFullName());
 
