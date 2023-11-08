@@ -29,19 +29,20 @@
 
 //////////////////////////////////////////////////////////
 let count = 0;
-
-
 //////////////////////////////////////////////////////////
 let countEL = document.querySelector(".count-el");
 
-let saveBtn = document.querySelector(".save-btn");
-
+let saveEl = document.querySelector(".save-el");
 //////////////////////////////////////////////////////////
 function increment(){
-    count = count + 1;
+    // count = count + 1;
+    // this is the same as doing the line above just shorter and simpler
+    count += 1;
     countEL.innerHTML = count;
 }
 
 function save(){
-    console.log(count);
+    let entries = count + "-";
+    saveEl.innerHTML += entries;
+
 }
