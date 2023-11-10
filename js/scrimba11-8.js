@@ -30,9 +30,9 @@
 //////////////////////////////////////////////////////////
 let count = 0;
 //////////////////////////////////////////////////////////
-let countEL = document.querySelector(".count-el");
+const countEL = document.querySelector(".count-el");
 
-let saveEl = document.querySelector(".save-el");
+const saveEl = document.querySelector(".save-el");
 //////////////////////////////////////////////////////////
 function increment(){
     // count = count + 1;
@@ -44,5 +44,6 @@ function increment(){
 function save(){
     let entries = count + "-";
     saveEl.innerHTML += entries;
-
+    countEL.innerHTML = 0;
+    count = 0;
 }
