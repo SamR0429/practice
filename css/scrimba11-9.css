@@ -1,0 +1,23 @@
+/*img {*/
+/*    width: 200px;*/
+/*    display: block;*/
+/*}*/
+p {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.error{
+    color: red;
+}
+
+button {
+    background: white;
+    color: black;
+    margin-top: 10px;
+    border: 1px solid black;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+}

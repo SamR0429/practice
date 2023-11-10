@@ -24,3 +24,10 @@
 // remove1Point();
 // console.log(myPoints);
 
+let errorP = document.querySelector(".error");
+
+//need .innerHtml to set html with error phrase
+
+function oops(){
+    errorP.innerHTML = "Something went wrong, please try again";
+}
