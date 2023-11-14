@@ -7,31 +7,24 @@ document.getElementById("num1-el").textContent = num1;
 document.getElementById("num2-el").textContent = num2;
 
 //needs innerHtml in all functions ??
-//the commented is what you wrote and its working correctly but this version is shorter and shorter is good
+//you were so close in your origin try you just needed to do a "let" and then concatinate it into the innerHtml
 
 function add() {
-/*    sum = num1 + num2;
-    sumP.innerHTML = sum;*/
-    sumP.innerHTML = "Sum: " + num1 + num2;
+    let result = num1 + num2;
+    sumP.innerHTML = "Sum:" + result;
 }
 
 function subtract() {
-    // sum = num1 - num2;
-    // sumP.innerHTML = sum;
-    sumP.innerHTML = "Sum: " + num1 - num2;
-
+    let result = num1 - num2;
+    sumP.innerHTML = "Sum:" + result;
 }
 
 function divide() {
-    // sum = num1 / num2;
-    // sumP.innerHTML = sum;
-    sumP.innerHTML = "Sum: " + num1 / num2;
-
+    let result = num1 / num2;
+    sumP.innerHTML = "Sum:" + result;
 }
 
 function multiply() {
-    // sum = num1 * num2;
-    // sumP.innerHTML = sum;
-    sumP.innerHTML = "Sum: " + num1 * num2;
-
+    let result = num1 * num2;
+    sumP.innerHTML = "Sum:" + result;
 }
