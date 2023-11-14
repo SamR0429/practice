@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    font-family: 'Noto Sans Mandaic', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    background-color: darkblue;
+}
+
+h3{
+    color: white;
+    font-size: 50px;
+}
+
+.score{
+    width: 190px;
+    height: 150px;
+    background-color: black;
+}
+
+button{
+    background-color: darkblue;
+    height: 35px;
+    width: 35px;
+    color: lightskyblue;
+    border-radius: 5px;
+}
