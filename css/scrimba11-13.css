@@ -6,11 +6,11 @@ body {
 .container {
     display: flex;
     justify-content: space-around;
-    background-color: darkblue;
+    background-color: #1B244A;
 }
 
 h3{
-    color: white;
+    color: #EEEEEE;
     font-size: 50px;
 }
 
@@ -18,12 +18,15 @@ h3{
     width: 190px;
     height: 150px;
     background-color: black;
+    border-radius: 5px;
+    color: #F94F6D ;
 }
 
 button{
-    background-color: darkblue;
+    background-color: #1B244A;
     height: 35px;
     width: 35px;
-    color: lightskyblue;
+    color: #9AABD8;
     border-radius: 5px;
+    border-color: #9AABD8;
 }
