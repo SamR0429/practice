@@ -1,4 +1,15 @@
 
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    background-color: darkgreen;
+    background-image: url("img/blackjacktable.jpg");
+}
+
 h1 {
     color: goldenrod;
+}
+
+#message-el {
+    font-style: italic;
 }
