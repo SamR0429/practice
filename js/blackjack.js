@@ -1,25 +1,27 @@
 
 let firstCard = 5;
 let secondCard = 7;
+let hasWon = false;
+let isAlive = true;
+let message = '';
 
 let sum = firstCard + secondCard;
 
-let hasWon = false;
-let isAlive = true;
-
 if (sum <= 20) {
-    console.log("do you want to draw a new card?");
+    message = "do you want to draw a new card?";
 } else if (sum === 21) {
-    console.log("you won!")
+    message = "you won!";
     hasWon = true;
     // isAlive = false;
 } else {
-    console.log("sorry you lost the game :(");
+    message = "sorry you lost the game :(";
     isAlive = false;
 }
 
 console.log(hasWon);
 console.log(isAlive);
+console.log(message);
+
 
 //side tasks
 
