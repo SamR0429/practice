@@ -1,26 +1,32 @@
-
 let firstCard = 5;
 let secondCard = 7;
 let hasWon = false;
 let isAlive = true;
 let message = '';
+let messageEl = document.querySelector(".message-el");
 
 let sum = firstCard + secondCard;
 
-if (sum <= 20) {
-    message = "do you want to draw a new card?";
-} else if (sum === 21) {
-    message = "you won!";
-    hasWon = true;
-    // isAlive = false;
-} else {
-    message = "sorry you lost the game :(";
-    isAlive = false;
-}
+function startGame() {
 
-console.log(hasWon);
-console.log(isAlive);
-console.log(message);
+    if (sum <= 20) {
+        message = "do you want to draw a new card?";
+    } else if (sum === 21) {
+        message = "you won!";
+        hasWon = true;
+        // isAlive = false;
+    } else {
+        message = "sorry you lost the game :(";
+        isAlive = false;
+    }
+
+     messageEl.innerHTML = message
+
+    // console.log(hasWon);
+    // console.log(isAlive);
+    // console.log(message);
+
+}
 
 
 //side tasks
