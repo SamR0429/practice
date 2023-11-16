@@ -3,11 +3,17 @@ let secondCard = 7;
 let hasWon = false;
 let isAlive = true;
 let message = '';
-let messageEl = document.querySelector(".message-el");
+const sum = firstCard + secondCard;
 
-let sum = firstCard + secondCard;
+const messageEl = document.querySelector(".message-el");
+const sumEl = document.querySelector(".sum-el");
+const cardsEl = document.querySelector(".cards-el");
+
 
 function startGame() {
+
+    cardsEl.innerHTML = "Cards: " + firstCard + " " +secondCard;
+    sumEl.innerHTML = "Sum: " + sum;
 
     if (sum <= 20) {
         message = "do you want to draw a new card?";
@@ -28,6 +34,9 @@ function startGame() {
 
 }
 
+function newCard(){
+    console.log("drawing of a new card");
+}
 
 //side tasks
 
