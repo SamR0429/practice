@@ -1,21 +1,28 @@
 let firstCard = 5;
 let secondCard = 7;
+let cards = [firstCard, secondCard];
 let hasWon = false;
 let isAlive = true;
 let message = '';
-const sum = firstCard + secondCard;
-
+let sum = firstCard + secondCard;
 const messageEl = document.querySelector(".message-el");
+
 const sumEl = document.querySelector(".sum-el");
 const cardsEl = document.querySelector(".cards-el");
 
 
-function startGame() {
+function startGame(){
+    renderGame();
+}
 
-    cardsEl.innerHTML = "Cards: " + firstCard + " " +secondCard;
+function renderGame() {
+
+
+    cardsEl.innerHTML = "Cards: " + cards[0]+ " " + cards[1] ;
+
     sumEl.innerHTML = "Sum: " + sum;
-
     if (sum <= 20) {
+
         message = "do you want to draw a new card?";
     } else if (sum === 21) {
         message = "you won!";
@@ -25,17 +32,22 @@ function startGame() {
         message = "sorry you lost the game :(";
         isAlive = false;
     }
-
      messageEl.innerHTML = message
 
     // console.log(hasWon);
+
     // console.log(isAlive);
     // console.log(message);
-
 }
 
 function newCard(){
+
+    let thirdCard = 5;
+
     console.log("drawing of a new card");
+    sum += thirdCard;
+    renderGame();
+
 }
 
 //side tasks
