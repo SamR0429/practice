@@ -46,9 +46,11 @@ function newCard(){
 
     console.log("drawing of a new card");
     sum += thirdCard;
+    cards.push(thirdCard);
+    console.log(cards);
     renderGame();
-
 }
+
 
 //side tasks
 
@@ -68,6 +70,14 @@ function newCard(){
 //     console.log("Here is your birthday card from the King!");
 // }else {
 //     console.log("Not elegible, you have already gotten one");
+// }
+
+// for(let i = 10; i <= 100 ; i+= 10){
+//     console.log(i);
+// }
+
+// for(let i = 0; i < cards.length; i ++){
+//     console.log(cards[i]);
 // }
 
 
