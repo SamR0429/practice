@@ -72,10 +72,6 @@ function newCard(){
 //     console.log("Not elegible, you have already gotten one");
 // }
 
-// for(let i = 10; i <= 100 ; i+= 10){
-//     console.log(i);
-// }
-
 // for(let i = 0; i < cards.length; i ++){
 //     console.log(cards[i]);
 // }
