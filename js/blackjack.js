@@ -1,5 +1,5 @@
-let firstCard = 5;
-let secondCard = 7;
+let firstCard = getRandom();
+let secondCard = getRandom();
 let cards = [firstCard, secondCard];
 let hasWon = false;
 let isAlive = true;
@@ -11,16 +11,24 @@ const sumEl = document.querySelector(".sum-el");
 const cardsEl = document.querySelector(".cards-el");
 
 
+function getRandom(){
+    return 5;
+}
+
 function startGame(){
     renderGame();
 }
 
 function renderGame() {
 
+    cardsEl.innerHTML = "Cards: ";
 
-    cardsEl.innerHTML = "Cards: " + cards[0]+ " " + cards[1] ;
+    for(let i = 0; i < cards.length; i++){
+        cardsEl.innerHTML += cards[i] + " ";
+    }
 
     sumEl.innerHTML = "Sum: " + sum;
+
     if (sum <= 20) {
 
         message = "do you want to draw a new card?";
@@ -42,12 +50,12 @@ function renderGame() {
 
 function newCard(){
 
-    let thirdCard = 5;
+    let thirdCard = getRandom();
 
     console.log("drawing of a new card");
     sum += thirdCard;
     cards.push(thirdCard);
-    console.log(cards);
+    // console.log(cards);
     renderGame();
 }
 
