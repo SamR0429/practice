@@ -1,7 +1,9 @@
-// let cards = [firstCard, secondCard];
-// let firstCard = getRandom();
-// let secondCard = getRandom();
-// let sum = firstCard + secondCard;
+
+let player = {
+    name: "Sam",
+    chips: 10
+}
+
 let cards = [];
 let sum = 0;
 let hasWon = false;
@@ -11,29 +13,33 @@ const messageEl = document.querySelector(".message-el");
 
 const sumEl = document.querySelector(".sum-el");
 const cardsEl = document.querySelector(".cards-el");
+const playerEl = document.querySelector(".player-el");
 
 
-function getRandom(){
+playerEl.innerHTML = player.name + ": $" + player.chips;
 
-    let randomNumber = Math.floor( Math.random() * 13 ) + 1;
 
-    if(randomNumber === 1){
+function getRandom() {
+
+    let randomNumber = Math.floor(Math.random() * 13) + 1;
+
+    if (randomNumber === 1) {
         return 11;
-    }else if (randomNumber > 10){
+    } else if (randomNumber > 10) {
         return 10;
-    }else{
+    } else {
         return randomNumber;
     }
 
 }
 
-function startGame(){
+function startGame() {
     isAlive = true;
 
     let firstCard = getRandom();
     let secondCard = getRandom();
 
-    cards = [firstCard , secondCard];
+    cards = [firstCard, secondCard];
     sum = firstCard + secondCard;
 
     renderGame();
@@ -43,7 +49,7 @@ function renderGame() {
 
     cardsEl.innerHTML = "Cards: ";
 
-    for(let i = 0; i < cards.length; i++){
+    for (let i = 0; i < cards.length; i++) {
         cardsEl.innerHTML += cards[i] + " ";
     }
 
@@ -60,17 +66,13 @@ function renderGame() {
         message = "sorry you lost the game :(";
         isAlive = false;
     }
-     messageEl.innerHTML = message
+    messageEl.innerHTML = message
 
-    // console.log(hasWon);
-
-    // console.log(isAlive);
-    // console.log(message);
 }
 
-function newCard(){
+function newCard() {
 
-    if (isAlive === true && hasWon === false){
+    if (isAlive === true && hasWon === false) {
         let thirdCard = getRandom();
         console.log("drawing of a new card");
         sum += thirdCard;

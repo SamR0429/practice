@@ -1,4 +1,3 @@
-
 // for(let i = 10; i <= 100 ; i+= 10){
 //     console.log(i);
 // }
@@ -57,13 +56,23 @@
 //     console.log("Showing the solution....")
 // }
 
-let likesDocumentaries = true;
-let likesStartups = false;
+// let likesDocumentaries = true;
+// let likesStartups = false;
+//
+// if (likesDocumentaries === true || likesStartups === true){
+//     recommendMovie();
+// }
+//
+// function recommendMovie() {
+//     console.log("Hey, check out this new film we think you will like!")
+// }
 
-if (likesDocumentaries === true || likesStartups === true){
-    recommendMovie();
+listings = {
+    bedrooms: 4,
+    ac: true,
+    description: "really nice castle",
+    rooms: ["small", "medium", "large", "small"]
 }
 
-function recommendMovie() {
-    console.log("Hey, check out this new film we think you will like!")
-}
+console.log(listings.ac);
+console.log(listings.rooms[1]);
