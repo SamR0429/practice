@@ -40,8 +40,30 @@
 
 // console.log(randomNumber)
 
-function rollDice(){
-    return Math.floor( Math.random() * 6 ) + 1
+// function rollDice(){
+//     return Math.floor( Math.random() * 6 ) + 1
+// }
+//
+// console.log(rollDice());
+
+// let hasSolvedChallenge = false
+// let hasHintsLeft = false
+//
+// if (hasSolvedChallenge === false && hasHintsLeft === false){
+//     showSolution();
+// }
+//
+// function showSolution() {
+//     console.log("Showing the solution....")
+// }
+
+let likesDocumentaries = true;
+let likesStartups = false;
+
+if (likesDocumentaries === true || likesStartups === true){
+    recommendMovie();
 }
 
-console.log(rollDice());
+function recommendMovie() {
+    console.log("Hey, check out this new film we think you will like!")
+}

@@ -1,10 +1,12 @@
-let firstCard = getRandom();
-let secondCard = getRandom();
-let cards = [firstCard, secondCard];
+// let cards = [firstCard, secondCard];
+// let firstCard = getRandom();
+// let secondCard = getRandom();
+// let sum = firstCard + secondCard;
+let cards = [];
+let sum = 0;
 let hasWon = false;
-let isAlive = true;
+let isAlive = false;
 let message = '';
-let sum = firstCard + secondCard;
 const messageEl = document.querySelector(".message-el");
 
 const sumEl = document.querySelector(".sum-el");
@@ -26,6 +28,14 @@ function getRandom(){
 }
 
 function startGame(){
+    isAlive = true;
+
+    let firstCard = getRandom();
+    let secondCard = getRandom();
+
+    cards = [firstCard , secondCard];
+    sum = firstCard + secondCard;
+
     renderGame();
 }
 
@@ -60,13 +70,15 @@ function renderGame() {
 
 function newCard(){
 
-    let thirdCard = getRandom();
+    if (isAlive === true && hasWon === false){
+        let thirdCard = getRandom();
+        console.log("drawing of a new card");
+        sum += thirdCard;
+        cards.push(thirdCard);
+        // console.log(cards);
+        renderGame();
+    }
 
-    console.log("drawing of a new card");
-    sum += thirdCard;
-    cards.push(thirdCard);
-    // console.log(cards);
-    renderGame();
 }
 
 
