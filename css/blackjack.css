@@ -33,3 +33,8 @@ button{
     margin: 5px;
     cursor: pointer;
 }
+
+img{
+    height: 40px;
+    background: transparent;
+}
