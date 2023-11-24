@@ -1,12 +1,17 @@
 
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: darkgreen;
+    background-color: #193412;
     /*background-image: url("img/blackjacktable.jpg");*/
     background-size: cover;
     text-align: center;
     color: white;
     font-weight: bold;
+}
+
+hr{
+    color: #b59c46;
+    margin: 20px -8px 25px -8px;
 }
 
 h1 {
@@ -16,6 +21,7 @@ h1 {
 .message-el {
     font-style: italic;
 }
+
 button{
     color: #016f32;
     width: 150px;
@@ -25,4 +31,5 @@ button{
     height: 25px;
     font-weight: bold;
     margin: 5px;
+    cursor: pointer;
 }
