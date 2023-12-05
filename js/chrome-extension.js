@@ -13,9 +13,13 @@ inputBtn.addEventListener("click", function () {
     console.log(myLeads)
 });
 
-for(let i = 0; i < myLeads.length; i ++){
-    // console.log(myLeads[i]);
+let listItems = '';
 
-    ulEl.innerHTML += "<li>" + myLeads[i] + "</li>";
+for(let i = 0; i < myLeads.length; i ++){
+
+    //this is the original version and we refactored to make code work faster ?? and to clean up the code. this is done to wait until the for loop is done iterating to then render so to not mess with the dom every iteration
+    // ulEl.innerHTML += "<li>" + myLeads[i] + "</li>";
+    listItems += "<li>" + myLeads[i] + "</li>";
 }
 
+    ulEl.innerHTML = listItems;
