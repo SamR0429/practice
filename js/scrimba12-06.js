@@ -18,3 +18,15 @@ function add(x , y){
 
 console.log( add(3, 4)   ) // should log 7
 console.log( add(9, 102) ) // should log 111
+
+/////////////////////////////////////////////////////////////////
+
+// Create a function, getFirst(arr), that returns the first item in the array
+
+function getFirst(arr){
+    return arr[0];
+}
+
+console.log(getFirst(["deez", "nuts", "is", "cool"]));
+
+// Call it with an array as an argument to verify that it works
