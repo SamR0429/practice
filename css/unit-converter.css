@@ -37,8 +37,16 @@ button{
     color: #3D3D3D;
     background-color: #F4F4F4;
     padding: 20px;
+
 }
 
 .conversions h3{
     color: #5A537B;
+    padding: 20px;
+    font-weight: normal;
+}
+
+.length-field, .volume-field, .mass-field{
+    height: 6rem;
+    background-color: white;
 }
