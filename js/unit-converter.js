@@ -7,8 +7,10 @@
 // will need to change innerHTML of
 
 let input = 1;
-let lengthConversion = 0;
-let volumeConversion = 0;
+let metersConversion;
+let feetConversion;
+let litersConversion;
+let gallonConversion;
 
 const convertBtn = document.querySelector(".convert-btn");
 const lengthTxtField = document.querySelector(".length-field-text");
@@ -18,14 +20,16 @@ const massTxtField = document.querySelector(".mass-field-text");
 
 function meterFeetConversion() {
     // console.log(lengthConversion)
-    lengthConversion = input * 3.281;
-    lengthTxtField.innerHTML = `${input} meters = ${lengthConversion} | ${input} feet = equation goes here for feet`;
+    metersConversion = input * 3.281;
+    feetConversion = input * 0.3048;
+    lengthTxtField.innerHTML = `${input} meters = ${metersConversion} feet | ${input} feet = ${feetConversion} meters`;
 }
 
 function literGallonConversion() {
     // console.log(volumeConversion)
-    volumeConversion = input * 0.264;
-    volumeTxtField.innerHTML = `${input} liters = ${lengthConversion} | ${input} gallons = equation goes here for gallons`;
+    litersConversion = input * 0.264;
+    gallonConversion = input * 3.785
+    volumeTxtField.innerHTML = `${input} liters = ${litersConversion} gallons | ${input} gallons = ${gallonConversion} liters`;
 }
 
 convertBtn.addEventListener("click", function () {
