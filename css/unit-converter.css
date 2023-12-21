@@ -8,8 +8,8 @@ body {
 
 .container {
     width: 70%;
-    margin: 0 auto; /* Center the container horizontally */
-    overflow: hidden; /* Clear float */
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .header {
